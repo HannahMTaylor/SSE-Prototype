@@ -1,0 +1,80 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 17-->
+            <section class="section">
+                <h4>Section 17 of 17 - Parent Consent</h4>
+                <input type="checkbox"  >
+                <label> I consent to placement in special education and the placement identified in Section 21.</label>
+                <br/>
+                <input type="checkbox"  >
+                <label>I have been informed of my Due Process Rights. </label>
+                <br/>
+                <input type="checkbox"  >
+                <label> I agree with the IEP. </label>
+                <br/>
+                <input type="checkbox"  >
+                <label>I would like to have copy of the IEP.</label>
+                <br/>
+                <input type="checkbox"  >
+                <label>Student attends the school he/she would attend if not  . If not, justify under conference information and comments, Section 24, of this IEP.</label>
+                <br/>
+                <input type="checkbox"  >
+                <label>Transition objectives have been developed (for students grade 9 or age 16 and older).</label>
+                <br/>
+                <input type="checkbox"  >
+                <label>For parents only: I have been informed that parental rights will be transferred to our competent child upon attaining the age of majority (age 18). </label>
+                <br/>
+                <input type="checkbox"  >
+                <label>For terminal year students only: I understand that the receipt of a diploma will terminate special education services.</label>
+                <br/>
+                <p></p>
+                <input type="text"  >
+                <input type="date"  >
+                <br/>
+                <label>Parent Signature</label>
+                <label style="margin-left: 50px;">Date</label>
+                <p></p>
+                <input type="text"  >
+                <input type="date"  >
+                <br/>
+                <label>Student Signature</label>
+                <label style="margin-left: 50px;">Date</label>
+                <p style="margin-top: 50px;"><b>RIGHTS THAT TRANSFER AT AGE OF MAJORITY</b></p>
+                <p>Beginning not later than one year before the child reaches the age of majority under State law, the IEP must include a statement that the child has been informed of the child’s rights under part B of the IDEA, if any, that will consistent with 34 CFR 300.520, transfer to the child on reaching the age of majority. [34 CFR 300.320(c)] </p>
+                <p style="margin-top: 50px;"><b>Conference Notes:</b></p>
+                <textarea  ></textarea>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b17">Back</button>
+            <button class="cont" id="c17" onclick="saveForm()">Submit</button>
+        </div>
+        <div id="saveBanner" class="banner">Saved!</div>
+    </div>
+</body>

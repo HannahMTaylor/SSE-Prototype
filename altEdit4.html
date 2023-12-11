@@ -1,0 +1,151 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 4-->
+            <section class="section">
+                <h4>Section 4 of 17 - IEP Team Participants in Attendance</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-1').disabled = false;"
+                            >
+                        </td>
+                        <td>
+                            <label>Student</label>
+                            <br/>
+                            <input type="text" id="s4-1" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-2').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Principal or Designee</label>
+                            <br/>
+                            <input type="text" id="s4-2" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-3').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Parent/Guardian</label>
+                            <br/>
+                            <input type="text" id="s4-3" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-4').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>General Education Teacher</label>
+                            <br/>
+                            <input type="text" id="s4-4" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-5').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Parent/Guardian</label>
+                            <br/>
+                            <input type="text" id="s4-5" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-6').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Special Education Teacher</label>
+                            <br/>
+                            <input type="text" id="s4-6" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-7').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" id="s4-7" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-8').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Agency Providing Transition Services (Age 16+)</label>
+                            <br/>
+                            <input type="text" id="s4-8" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-9').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" id="s4-9" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-10').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" id="s4-10" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-11').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" id="s4-11" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="document.getElementById('s4-12').disabled = false;" >
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" id="s4-12" disabled>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b4">Back</button>
+            <button class="cont" id="c4">Continue</button>
+        </div>
+        
+    </div>
+</body>

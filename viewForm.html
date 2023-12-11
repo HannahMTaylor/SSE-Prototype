@@ -1,0 +1,872 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton">Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        <form class="formData" id="se7">
+            <!-- Section 1 -->
+            <section class="section">
+                <h4>Section 1 - Student Information</h4>
+                <!--first row student info-->
+                <div class="input-group">
+                    <label for="StudentName">Student Name: </label>
+                    <input type="text" id="StudentName" disabled value="Hannah Taylor">
+                    <label for="Birthdate">Birthdate: </label>
+                    <input type="date" id="Birthdate" disabled>
+                    <label for="Gender">Gender: </label>
+                    <input type="text" id="Gender" disabled value="F">
+
+                </div>
+                <!--Second row student info-->
+                <div class="input-group">
+                    <label for="School">School Name: </label>
+                    <input type="text" id="School" disabled>
+                    <label for="Grade">Grade: </label>
+                    <input type="number" id="Grade" disabled>
+                    <label for="Teacher">Teacher: </label>
+                    <input type="text" id="Teacher" disabled value="Jane Doe">
+                </div>
+                <!--Eligibility Section >> rethink how to make these checklists vertical with styling-->
+                <div class="input-group"> 
+                    <b>Eligibility</b> <br/>
+                    <input type="checkbox" id="option1" disabled>
+                    <label for="option1">Initial Eligibility Meeting</label>
+                    <input type="checkbox" id="option2" disabled>
+                    <label for="option2">Reevaluation</label>
+                </div>
+                <!-- IEP Steps -->
+                <div class="input-group">
+                    <b>Individualized Education Program</b> <br/>
+                    <input type="checkbox" disabled>
+                    <label>Initial IEP</label> <br/>
+                    <input type="checkbox" disabled>
+                    <label>IEP Review</label>
+                    <br/>
+                    <input type="checkbox" disabled>
+                    <label>Ammendment to IEP Dated: </label>
+                    <input type="date" disabled>
+                    <br/>
+                    <input type="checkbox" disabled>
+                    <label>Other (please specify): </label>
+                    <input type="text" disabled>
+                </div>
+                <!--Date of Meetings-->
+                <div class="input-group">
+                    <b>Date of Meetings</b>
+                    <br/>
+                    <label>Date of Initial Eligibility Determination: </label>
+                    <input type="date" disabled>
+                    <br/>
+                    <label>Date Initial Evaluation Completed: </label>
+                    <input type="date" disabled>
+                    <br/>
+                    <label>Date of Next IEP Review meeting (on or before): </label>
+                    <input type="date" disabled>
+                    <br/>
+                    <label>Date of Next Re-Evaluation meeting (on or before): </label>
+                    <input type="date" disabled>
+                </div>
+            </section>
+            <!-- Section 2 -->
+            <section class="section">
+                <h4>Section 2 - Special Education Eligibility</h4>
+                <table>
+                    <tr>
+                        <td>Learning Impairment</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>Intellectual Disability</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Specific Learning Disability</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Developmentally Delayed</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>For Ages Six through Eight</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>For Ages Three through Five</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Physical-Sensory Impairment</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>Visual Impairment</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Hearing Impairment</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Orthopedic Impairment</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Other health impairment</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Social-Emotional Impairment</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>Emotional disturbance</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Autism</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Communication Impairment</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>Speech impairment (articulation)</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Language impairment (grammer, syntax, pragmatics)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Multiple Impairment</td>
+                        <td>
+                            <input type="checkbox" disabled>
+                            <label>Deaf blindness</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Sever multiple disabilities</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Traumatic brain injury</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 3-->
+            <section class="section">
+                <h4>Section 3 - Record of IEP Conference</h4>
+                <label>Meeting Notice (SE-6) Date: </label>
+                <input type="date" disabled>
+                <br/>
+                <label>Phone Call Date(s): </label>
+                <input type="date" disabled>
+                <button disabled>Add Date</button>
+                <br/>
+                <label>Personal Contact Date(s): </label>
+                <input type="date" disabled>
+                <button disabled>Add Date</button>
+                <br/>
+                <label>Other (with date): </label>
+                <input type="text" disabled value="Specify">
+                <input type="date" disabled>
+            </section>
+            <!--Section 4-->
+            <section class="section">
+                <h4>Section 4 - IEP Team Participants in Attendance</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Student</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Principal or Designee</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Parent/Guardian</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>General Education Teacher</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Parent/Guardian</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Special Education Teacher</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Agency Providing Transition Services (Age 16+)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                        <td>
+                            <input type="checkbox" disabled>
+                        </td>
+                        <td>
+                            <label>Other (include title)</label>
+                            <br/>
+                            <input type="text" disabled>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 5-->
+            <section class="section">
+                <h4>Section 5 - Parent Concerns</h4>
+                <label>Describe the parent's concerns regarding their student's education:</label>
+                <br/>
+                <textarea id="parentConcerns" disabled></textarea>
+            </section>
+            <!--Section 6-->
+            <section class="section">
+                <h4>Section 6 - Present Levels of Performance</h4>
+                <p>In this section describe (a) the strengths and interests of the student, (b) what interferes with or limits the student's learning, (c) how the student's disability affects their progress in the general curriculum. Then provide a summary of relevant data (see SE-2, Child Outcomes Summary Form), assessments (e.g., Test of Nonverbal Intelligence [TONI-4], Brigance inventory, Vineland Adaptive Behavior Scale, Marshall Islands Standard Achievement Test [MISAT], and observations related to the student's academic and functional performance: parent interviews, Classroom observation, curriculum standards, report cards, teacher comments, health and hearing screening information)</p>
+                <br/>
+                <b>(a)</b>
+                <label>Student Strengths and Interests:</label>
+                <input type="text" disabled>
+                <br/>
+                <b>(b)</b>
+                <label>Factors impacting academic achievement and functional performance:</label>
+                <input type="text" disabled>
+                <br/>
+                <b>(c)</b>
+                <label>Impact on Progress in General Curriculum:</label>
+                <input type="text" disabled>
+                <br/>
+                <b>(d)</b>
+                <label>Summary of Relevant Data Related to Academic and Functional Performance:</label>
+                <input type="text" disabled>
+                <br/>
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <td style="font-weight: bold;">Subject Area</td>
+                        <td style="font-weight: bold;">Description of Present Levels of Performance</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Skills (e.g., reading, writing, mathematics, science, and other subjects)</td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Functional Skills (e.g., adaptive behavior, social skills, other factors impacting ability to navigate environment and engage in age-appropriate activities)</td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">For students age 16 and above only describe results of transition assessments that inform decisions regarding instruction, transition services, community experiences, and future planning students need to achieve their postsecondary expectations. </td>
+                    </tr>
+                    <tr>
+                        <td>Transition Skills</td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 7-->
+            <section class="section">
+                <h4>Section 7 - Post-School Goals [for students age 16 and older only]</h4>
+                <p>IDEA 2004 indicates 16 as the age which transition planning should be initiated. Post-school goals must be measurable and are required for employment and education and training.</p>
+                <label style="font-weight: bold;">Post-School Employment Goal:</label>
+                <textarea disabled></textarea>
+                <label style="font-weight: bold;">Post-School Education or Training Goal:</label>
+                <textarea disabled></textarea>
+                <label style="font-weight: bold;">Post-School Independent Living Goal:</label>
+                <textarea disabled></textarea>
+                <p>Describe the age appropriate transition assessment process used to collect data to inform post-school goals (must be updated annually):</p>
+                <textarea disabled></textarea>
+            </section>
+            <!--Section 8-->
+            <section class="section">
+                <h4>Section 8 - Consideration of Special Factors</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Does this student exhibit behavior that requires a behavior intervention plan?</p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, complete behavior intervention plan)</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Is the student blind or visually impaired?</p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Is the student deaf or hard of hearing? </p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Is the student deaf-blind?</p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Does the student have unique communication needs? </p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Does the student need assistive technology devices or services? </p>
+                            <input type="checkbox" disabled>
+                            <label> Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Does the student require special transportation?</p>
+                            <input type="checkbox" disabled>
+                            <label> Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Does the student require a health care plan? </p>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 9-->
+            <section class="section">
+                <h4>Section 9 - Supplementary Aids and Supports</h4>
+                <p>Supports and Modifications to the Environment, Behavior Training Needs, Social Interaction Supports for the Student, Health-Related Needs, Physical Needs, Transitioning Times, Assistive Technology, Training Needs, Guidance.</p>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold;">
+                        Area</td>
+                        <td style="font-weight: bold;">
+                        Aids or Supports</td>
+                        <td style="font-weight: bold;">
+                        Frequency/Condition</td>
+                        <td style="font-weight: bold;">
+                        Location/Setting</td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 10-->
+            <section class="section">
+                <h4>Section 10 - Special Education and Related Services</h4>
+                <b>A statement of the special education and related services, based on peer-reviewed research to the extent practicable, to be provided to the child, or on behalf of the child, and a statement of the program modification or supports for school personnel that will be provided to enable the child:</b>
+                <ul>
+                    <li>To advance appropriately toward attaining the annual goals.</li> 
+                    <li>To be involved in and make progress in the general education curriculum and to participate in extracurricular and other nonacademic activities.</li>
+                    <li>To be educated and participate with other children with disabilities and nondisabled children in extracurricular and other nonacademic activities.</li>
+                </ul>
+                <p>Potential Related Services include:</p>
+                <ul>
+                    <li>Transportation </li>
+                    <li>Speech/Language Therapy </li>
+                    <li>Occupational Therapy </li>
+                    <li>Physical Therapy </li>
+                    <li>School Counselor Services </li>
+                    <li>Mental Health Services</li>
+                    <li>Orientation and Mobility Services</li>
+                    <li>Assistive Technology</li>
+                    <li>
+                        Other: <input type="text" disabled>
+                    </li>
+                </ul>
+                <table>
+                    <tr style="font-weight: bold;">
+                        <td>Special Education or Related Service</td>
+                        <td>Service Mode</td>
+                        <td>Frequency</td>
+                        <td>Setting</td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 11-->
+            <section class="section">
+                <h4>Section 11 - Accommodation and Modifications</h4>
+                <table>
+                    <tr>
+                        <td>Accommodations: What type(s) if any is necessary for the student to access the general education curriculum and/or appropriate activities to make effective progress? </td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Modifications: What modifications to the general education curriculum, if any, need to be made to enable the child to be involved in and make progress in the general education curriculum? </td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 12-->
+            <section class="section">
+                <h4>Section 12 - Transition Services and Activities (for students age 16 and older only)</h4>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <b>Projected Date of Graduation/Program Completion:</b>
+                            <input type="date" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Planned Course of Study:</b> The class schedule must be multi-year (through exit), specific and individualized, and directly linked to the post-school goals.  The planned course of study must address all post-school areas identified for the student.</td>
+                        <td>
+                            <b>9th grade: </b>
+                            <input type="text" disabled>
+                            <br/>
+                            <b>10th grade: </b>
+                            <input type="text" disabled>
+                            <br/>
+                            <b>11th grade: </b>
+                            <input type="text" disabled>
+                            <br/>
+                            <b>12th grade: </b>
+                            <input type="text" disabled>
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Transition Services and Activities:</b> Describe the activities provided by the adults in the school and in the community that will enable and promote the student’s progress toward meeting annual and post-school goals. Include special education, general education, related services, services from other agencies, and services provided by families, as appropriate for student’s needs.  Transition services must be specific and individualized and must state what the adults will provide. </td>
+                    </tr>
+                    <tr>
+                        <td><b>Instruction</b></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Related Services</b></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Community Experiences</b></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>The development of employment and other post-school adult living objectives</b></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Acquisition of daily living skills and provision of a functional vocational evaluation (if appropriate)</b></td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Agency Linkages:</b>What agency linkages, if any, have been made? Written parental consent must be obtained prior to inviting any agency or organization likely to be responsible for providing or paying for transition services.</td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 13-->
+            <section class="section">
+                <h4>Section 13 - Annual Goals</h4>
+                <p><b>Based on needs identified in the present levels section, include annual goal(s)</b>, including academic and functional goals designed to (a) meet the child/student’s needs that result from the child’s disability to enable the child to be  involved in and make progress in the general education curriculum, and (b) meet each of the child’s other educational needs that result from the child’s disability.</p>
+                <p>A measurable goal includes specific, observable, and quantifiable criteria that can be used to determine if the student has made progress.</p>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Annual Goal:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <p><b>For children with disabilities who take alternate assessments aligned to alternate achievement standards (in addition to the annual goals), include a description of benchmarks or short-term objectives.  If not applicable enter N/A.</b></p>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <label><b>Benchmark:</b></label>
+                <textarea disabled></textarea>
+                <br/>
+                <p><b>Description of (a) how the child’s progress toward meeting the annual goals will be measured, and (b) when periodic reports on the progress the child is making toward meeting the annual goals will be provided such as through the use of quarterly or other periodic reports, concurrent with the issuance of report cards.</b></p>
+                <table>
+                    <tr>
+                        <td>
+                            <b>Progress Monitoring Procedures:</b>
+                        </td>
+                        <td><input type="text" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Reporting Timeline:</b>
+                        </td>
+                        <td><input type="text" disabled></td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 14-->
+            <section class="section">
+                <h4>Section 14 - Participation in State Assessment</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <b>Accommodations:</b> What type(s) if any is necessary to measure the academic achievement and functional performance of the child on State and system wide assessments.
+                        </td>
+                        <td>
+                            <textarea disabled></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Is the student eligible for the alternate assessment?</b> <br/>
+                            <input type="checkbox" disabled>
+                            <label>Yes (if yes, provide explanation)</label>
+                            <input type="checkbox" disabled>
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <b>Explanation of why student cannot participate in regular assessment and why the alternate assessment is appropriate.</b> <br/>
+                            <input type="text" disabled>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 15-->
+            <section class="section">
+                <h4>Section 15 - Recommended Placement in Least Restrictive Environment (LRE)</h4>
+                <p>To the maximum extent appropriate, children with disabilities, including children in public or private institutions or other care facilities, are educated with children without disabilities; and special classes, separate schooling or other removal of children with disabilities from the regular education environment occurs only if the nature or severity of the disability is such that education in regular classes, with the use of supplementary aids and services, cannot be achieved satisfactorily.</p>
+                <table>
+                    <tr>
+                        <td>
+                            <b>Provide explanation of the extent, if any, to which the child will not participate with nondisabled children in the regular classroom and in extracurricular and other nonacademic activities.</b>
+                        </td>
+                        <td><textarea disabled></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <b>Placement Options Selected</b>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Regular classroom with additional support services</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Regular classroom with special education consultation services</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Regular classroom with additional itinerant special education services </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label> Regular school with special education resource program services </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Regular school with special education classroom services </label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Self-contained classroom for students with severe disabilities</label>
+                            <br/>
+                            <input type="checkbox" disabled>
+                            <label>Home or hospital instruction</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!--Section 16-->
+            <section class="section">
+                <h4>Section 16 - IEP Participants</h4>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b> Special Education Teacher</label>
+                    
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b> Regular Education Teacher</label>
+                    
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b> LEA Representative</label>
+                    
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b> Parent(s)</label>
+                    
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+                <div class="input-group">
+                    <label><b>Name: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Position: </b></label>
+                    <input type="text" disabled>
+                    <label><b>Date: </b></label>
+                    <input type="text" disabled>
+                </div>
+            </section>
+            <!--Section 17-->
+            <section class="section">
+                <h4>Section 17 - Parent Consent</h4>
+                <input type="checkbox" disabled>
+                <label> I consent to placement in special education and the placement identified in Section 21.</label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>I have been informed of my Due Process Rights. </label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label> I agree with the IEP. </label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>I would like to have copy of the IEP.</label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>Student attends the school he/she would attend if not disabled. If not, justify under conference information and comments, Section 24, of this IEP.</label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>Transition objectives have been developed (for students grade 9 or age 16 and older).</label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>For parents only: I have been informed that parental rights will be transferred to our competent child upon attaining the age of majority (age 18). </label>
+                <br/>
+                <input type="checkbox" disabled>
+                <label>For terminal year students only: I understand that the receipt of a diploma will terminate special education services.</label>
+                <br/>
+                <p></p>
+                <input type="text" disabled>
+                <input type="date" disabled>
+                <br/>
+                <label>Parent Signature</label>
+                <label style="margin-left: 50px;">Date</label>
+                <p></p>
+                <input type="text" disabled>
+                <input type="date" disabled>
+                <br/>
+                <label>Student Signature</label>
+                <label style="margin-left: 50px;">Date</label>
+                <p style="margin-top: 50px;"><b>RIGHTS THAT TRANSFER AT AGE OF MAJORITY</b></p>
+                <p>Beginning not later than one year before the child reaches the age of majority under State law, the IEP must include a statement that the child has been informed of the child’s rights under part B of the IDEA, if any, that will consistent with 34 CFR 300.520, transfer to the child on reaching the age of majority. [34 CFR 300.320(c)] </p>
+                <p style="margin-top: 50px;"><b>Conference Notes:</b></p>
+                <textarea disabled></textarea>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="view">Back</button>
+        </div>
+    </div>
+</body>

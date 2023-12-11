@@ -1,0 +1,75 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 15-->
+            <section class="section">
+                <h4>Section 15 of 17 - Recommended Placement in Least Restrictive Environment (LRE)</h4>
+                <p>To the maximum extent appropriate, children with disabilities, including children in public or private institutions or other care facilities, are educated with children without disabilities; and special classes, separate schooling or other removal of children with disabilities from the regular education environment occurs only if the nature or severity of the disability is such that education in regular classes, with the use of supplementary aids and services, cannot be achieved satisfactorily.</p>
+                <table>
+                    <tr>
+                        <td>
+                            <b>Provide explanation of the extent, if any, to which the child will not participate with non  children in the regular classroom and in extracurricular and other nonacademic activities.</b>
+                        </td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <b>Placement Options Selected</b>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Regular classroom with additional support services</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Regular classroom with special education consultation services</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Regular classroom with additional itinerant special education services </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label> Regular school with special education resource program services </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Regular school with special education classroom services </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Self-contained classroom for students with severe disabilities</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Home or hospital instruction</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b15">Back</button>
+            <button class="cont" id="c15">Continue</button>
+        </div>
+        
+    </div>
+</body>

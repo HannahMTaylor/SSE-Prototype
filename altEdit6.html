@@ -1,0 +1,79 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 6-->
+            <section class="section">
+                <h4>Section 6 of 17 - Present Levels of Performance</h4>
+                <p>In this section describe (a) the strengths and interests of the student, (b) what interferes with or limits the student's learning, (c) how the student's disability affects their progress in the general curriculum. Then provide a summary of relevant data (see SE-2, Child Outcomes Summary Form), assessments (e.g., Test of Nonverbal Intelligence [TONI-4], Brigance inventory, Vineland Adaptive Behavior Scale, Marshall Islands Standard Achievement Test [MISAT], and observations related to the student's academic and functional performance: parent interviews, Classroom observation, curriculum standards, report cards, teacher comments, health and hearing screening information)</p>
+                <br/>
+                <b>(a)</b>
+                <label>Student Strengths and Interests:</label>
+                <input type="text"  >
+                <br/>
+                <b>(b)</b>
+                <label>Factors impacting academic achievement and functional performance:</label>
+                <input type="text"  >
+                <br/>
+                <b>(c)</b>
+                <label>Impact on Progress in General Curriculum:</label>
+                <input type="text"  >
+                <br/>
+                <b>(d)</b>
+                <label>Summary of Relevant Data Related to Academic and Functional Performance:</label>
+                <input type="text"  >
+                <br/>
+                <table style="margin-top: 15px;">
+                    <tr>
+                        <td style="font-weight: bold;">Subject Area</td>
+                        <td style="font-weight: bold;">Description of Present Levels of Performance</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Skills (e.g., reading, writing, mathematics, science, and other subjects)</td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Functional Skills (e.g., adaptive behavior, social skills, other factors impacting ability to navigate environment and engage in age-appropriate activities)</td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">For students age 16 and above only describe results of transition assessments that inform decisions regarding instruction, transition services, community experiences, and future planning students need to achieve their postsecondary expectations. </td>
+                    </tr>
+                    <tr>
+                        <td>Transition Skills</td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b6">Back</button>
+            <button class="cont" id="c6">Continue</button>
+        </div>
+        
+    </div>
+</body>

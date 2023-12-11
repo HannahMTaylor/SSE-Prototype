@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 8-->
+            <section class="section">
+                <h4>Section 8 of 17 - Consideration of Special Factors</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Does this student exhibit behavior that requires a behavior intervention plan?</p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, complete behavior intervention plan)</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Is the student blind or visually impaired?</p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Is the student deaf or hard of hearing? </p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Is the student deaf-blind?</p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Does the student have unique communication needs? </p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, determine supplementary aids and services) </label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Does the student need assistive technology devices or services? </p>
+                            <input type="checkbox"  >
+                            <label> Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Does the student require special transportation?</p>
+                            <input type="checkbox"  >
+                            <label> Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                        <td>
+                            <p>Does the student require a health care plan? </p>
+                            <input type="checkbox"  >
+                            <label>Yes (if yes, determine supplementary aids and services)</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>No</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b8">Back</button>
+            <button class="cont" id="c8">Continue</button>
+        </div>
+        
+    </div>
+</body>

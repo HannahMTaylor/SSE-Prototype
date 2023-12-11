@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!-- Section 2 -->
+            <section class="section">
+                <h4>Section 2 of 17 - Special Education Eligibility</h4>
+                <table>
+                    <tr>
+                        <td>Learning Impairment</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>Intellectual Disability</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Specific Learning Disability</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Developmentally Delayed</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>For Ages Six through Eight</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>For Ages Three through Five</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Physical-Sensory Impairment</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>Visual Impairment</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Hearing Impairment</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Orthopedic Impairment</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Other health impairment</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Social-Emotional Impairment</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>Emotional disturbance</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Autism</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Communication Impairment</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>Speech impairment (articulation)</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Language impairment (grammer, syntax, pragmatics)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Multiple Impairment</td>
+                        <td>
+                            <input type="checkbox"  >
+                            <label>Deaf blindness</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Sever multiple disabilities</label>
+                            <br/>
+                            <input type="checkbox"  >
+                            <label>Traumatic brain injury</label>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b2">Back</button>
+            <button class="cont" id="c2">Continue</button>
+        </div>
+        
+    </div>
+</body>

@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 7-->
+            <section class="section">
+                <h4>Section 7 of 17 - Post-School Goals [for students age 16 and older only]</h4>
+                <p>IDEA 2004 indicates 16 as the age which transition planning should be initiated. Post-school goals must be measurable and are required for employment and education and training.</p>
+                <label style="font-weight: bold;">Post-School Employment Goal:</label>
+                <textarea  ></textarea>
+                <label style="font-weight: bold;">Post-School Education or Training Goal:</label>
+                <textarea  ></textarea>
+                <label style="font-weight: bold;">Post-School Independent Living Goal:</label>
+                <textarea  ></textarea>
+                <p>Describe the age appropriate transition assessment process used to collect data to inform post-school goals (must be updated annually):</p>
+                <textarea  ></textarea>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b7">Back</button>
+            <button class="cont" id="c7">Continue</button>
+        </div>
+        
+    </div>
+</body>

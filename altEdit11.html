@@ -1,0 +1,50 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 11-->
+            <section class="section">
+                <h4>Section 11 of 17 - Accommodation and Modifications</h4>
+                <table>
+                    <tr>
+                        <td>Accommodations: What type(s) if any is necessary for the student to access the general education curriculum and/or appropriate activities to make effective progress? </td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Modifications: What modifications to the general education curriculum, if any, need to be made to enable the child to be involved in and make progress in the general education curriculum? </td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b11">Back</button>
+            <button class="cont" id="c11">Continue</button>
+        </div>
+        
+    </div>
+</body>

@@ -1,0 +1,92 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-headerContainer">
+            <img src="image.jfif" alt="logo" class="logoImg" style="width: 225px; height: 210px;">
+            <!--align this text on the right of the div-->
+            <div>
+                <h1 class="txtAlignRight">Republic of the Marshall Islands</h1>
+                <h2 class="txtAlignRight">Public School System</h2>
+                <h3 class="txtAlignRight">IEP Form (SE-7)</h3>
+                <div>
+                    <button class="opt" id="printButton" disabled>Print Page</button>
+                    <button class="opt" id="toggleButton" style="margin-right: 10px;">Toggle Language</button>
+                </div>
+            </div>
+        </div>
+        <div class="formInfo">
+            <br/>
+            <b>Individual Education Plan (IEP)</b>
+            <p>The Individual Education Program (IEP) is a written document developed for each eligible child with a disability. Part B regulation specifies the procedures the school must follow to develop, review, and revise the IEP for each child.</p>
+        </div>
+        
+        <form class="formData" id="se7">
+            <!--Section 12-->
+            <section class="section">
+                <h4>Section 12 of 17 - Transition Services and Activities (for students age 16 and older only)</h4>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <b>Projected Date of Graduation/Program Completion:</b>
+                            <input type="date"  >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Planned Course of Study:</b> The class schedule must be multi-year (through exit), specific and individualized, and directly linked to the post-school goals.  The planned course of study must address all post-school areas identified for the student.</td>
+                        <td>
+                            <b>9th grade: </b>
+                            <input type="text"  >
+                            <br/>
+                            <b>10th grade: </b>
+                            <input type="text"  >
+                            <br/>
+                            <b>11th grade: </b>
+                            <input type="text"  >
+                            <br/>
+                            <b>12th grade: </b>
+                            <input type="text"  >
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Transition Services and Activities:</b> Describe the activities provided by the adults in the school and in the community that will enable and promote the student’s progress toward meeting annual and post-school goals. Include special education, general education, related services, services from other agencies, and services provided by families, as appropriate for student’s needs.  Transition services must be specific and individualized and must state what the adults will provide. </td>
+                    </tr>
+                    <tr>
+                        <td><b>Instruction</b></td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Related Services</b></td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Community Experiences</b></td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>The development of employment and other post-school adult living objectives</b></td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Acquisition of daily living skills and provision of a functional vocational evaluation (if appropriate)</b></td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Agency Linkages:</b>What agency linkages, if any, have been made? Written parental consent must be obtained prior to inviting any agency or organization likely to be responsible for providing or paying for transition services.</td>
+                        <td><textarea  ></textarea></td>
+                    </tr>
+                </table>
+            </section>
+        </form>
+        <div class="flexContainer">
+            <button class="back" id="b12">Back</button>
+            <button class="cont" id="c12">Continue</button>
+        </div>
+        
+    </div>
+</body>
